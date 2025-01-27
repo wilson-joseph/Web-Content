@@ -1,0 +1,106 @@
+.size-guide{
+	border-style: solid; 
+	border: 1px solid black; 
+	width: 100%;  
+	display: inline-table;
+}
+.size-guide > div{
+	border: 1px solid black;
+	text-align: center;
+	display: table-row;
+}
+.size-guide > div:nth-child(odd){
+	background-color: lightgray;
+}
+.size-guide > div > div{
+	border: 1px solid black; 
+	max-width: 25%;
+	min-width: 20%;
+	display: table-cell;
+}
+.header{
+	color: white;
+	background-color: black;
+}
+.col-1{
+	width: 100%;
+}
+.col-5{
+	width: 10%;
+}
+.disclaimer{
+	font-size: 50%;
+}
+
+/* Selector	*/
+.unitBtn {
+    display: inline;
+    width: 20%;
+    /*max-width: 33.3%;
+    height: auto;
+    padding: 0.75rem 1.5rem;*/
+    margin: 0.25rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    cursor: pointer;
+    -webkit-appearance: button;
+    -webkit-border-radius: 0px;
+}
+
+.size-guide-container input[type="radio"],
+input[name="unitselector"] { display: none; }
+
+#inputInch:checked ~ label[for="inputInch"],
+#inputInch1:checked ~ label[for="inputInch1"],
+#inputInch2:checked ~ label[for="inputInch2"],
+#inputInch3:checked ~ label[for="inputInch3"],
+#inputInch4:checked ~ label[for="inputInch4"],
+#inputInch5:checked ~ label[for="inputInch5"],
+#inputInch6:checked ~ label[for="inputInch6"],
+#inputInch7:checked ~ label[for="inputInch7"],
+#inputInch8:checked ~ label[for="inputInch8"],
+#inputInch9:checked ~ label[for="inputInch9"],
+#inputCM:checked ~ label[for="inputCM"],
+#inputCM1:checked ~ label[for="inputCM1"],
+#inputCM2:checked ~ label[for="inputCM2"],
+#inputCM3:checked ~ label[for="inputCM3"],
+#inputCM4:checked ~ label[for="inputCM4"],
+#inputCM5:checked ~ label[for="inputCM5"],
+#inputCM6:checked ~ label[for="inputCM6"],
+#inputCM7:checked ~ label[for="inputCM7"],
+#inputCM8:checked ~ label[for="inputCM8"],
+#inputCM9:checked ~ label[for="inputCM9"]{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.inch, .cm {
+	display: none;
+}
+
+#inputInch:checked ~ .inch,
+#inputInch1:checked ~ .inch,
+#inputInch2:checked ~ .inch,
+#inputInch3:checked ~ .inch,
+#inputInch4:checked ~ .inch,
+#inputInch5:checked ~ .inch,
+#inputInch6:checked ~ .inch,
+#inputInch7:checked ~ .inch,
+#inputInch8:checked ~ .inch,
+#inputInch9:checked ~ .inch,
+#inputCM:checked ~ .cm,
+#inputCM1:checked ~ .cm,
+#inputCM2:checked ~ .cm,
+#inputCM3:checked ~ .cm,
+#inputCM4:checked ~ .cm,
+#inputCM5:checked ~ .cm,
+#inputCM6:checked ~ .cm,
+#inputCM7:checked ~ .cm,
+#inputCM8:checked ~ .cm,
+#inputCM9:checked ~ .cm{
+    display: inline;
+}
