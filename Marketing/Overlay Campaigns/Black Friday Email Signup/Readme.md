@@ -1,0 +1,1 @@
+These images were use for a limited run email capture campaign during black friday. Need to get the completed overlay
